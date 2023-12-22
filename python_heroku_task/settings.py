@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-tlv)36c^h%me#0j)!67193036i0(q!%)rm_9k19_&32jf9!t3b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -77,14 +77,13 @@ WSGI_APPLICATION = 'python_heroku_task.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'python_heroku_task',
-        'USER': 'sample_user',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
+        'NAME': 'verceldb',
+        'USER': 'default',
+        'PASSWORD': 'NbjUC9IqQJ2f',
+        'HOST': 'ep-super-field-81073183.us-east-1.postgres.vercel-storage.com',
         'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
